@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 160px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* home page */
+/* Home page */
+.content {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+    font-size: 14px;
+    color: #333;
+}
+
+.left-side li i {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #f35525;
+}
+
+.right-social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.right-social-icons li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.right-social-icons li a {
+    font-family: Arial;
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.right-social-icons li a i {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.right-social-icons li a:hover {
+    background-color: #f35525;
+    /* Darker shade on hover */
+}
+
+/* Nav bar */
+.col-2 {
+    display: flex;
+    /* Add flex display for better alignment */
+    justify-content: center;
+    /* Center the logo horizontally */
+    align-items: center;
+    /* Center the logo vertically */
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo h1 {
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.col-2 .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.nav-menu li a:hover {
+    color: #f35525;
+}
+
+.nav-menu .schedule-visit {
+    padding: 0px 25px 0px 0px;
+    border: 1px solid #111111;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .schedule-visit i {
+    margin-right: 8px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    background-color: #e04e21;
+    color: white;
+    padding: 10px;
+}
+
+.nav-menu .schedule-visit:hover {
+    color: #e04e21;
+}
+
+.hero {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 5px;
+    position: relative; /* Add this to position the navigation arrows correctly */
+}
+
+.slideshow{
+    width: 100%;
+    background-color: yellow;
+    height: 520px;
+    position: relative; /* Add this to position the images and navigation arrows correctly */
+}
+
+.slideshow .images{
+    width: 100%; /* Changed from auto to 100% */
+    height: 100%; /* Changed from auto to 100% */
+    position: relative;
+    overflow: hidden; /* Add this to hide overflowing images */
+}
+
+.images img{
+    width: 100%; /* Changed from max-width to width */
+    height: 100%; /* Add this to maintain aspect ratio */
+    object-fit: cover; /* Changed from fill to cover */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171; /* Add active class to indicate current slide */
+}

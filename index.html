@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Real Estate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--pre loader-->
+    <div class="loader"></div>
+
+    <!-- Actual Content -->
+    <div class="content" style="display: none">
+      <div class="row">
+        <div class="col-1 left-side">
+          <li>
+            <i class="fa fa-envelope"></i>
+            info@company.com
+          </li>
+          <li>
+            <i class="fa fa-map"></i>
+            Sunny Isles Beach, FL 33160
+          </li>
+        </div>
+        <div class="col-1 right-side">
+          <ul class="right-social-icons">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 logo">
+          <h1><a href="#">Villa</a></h1>
+        </div>
+        <div class="col-2">
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Property Details</a></li>
+            <li>
+              <a class="schedule-visit" href="#"
+                ><i class="fa fa-calendar"></i>Shedule a Visit</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="slideshow">
+          <div class="images">
+            <img src="images/banner-01.jpg" class="mySlides" alt="banner-01" />
+            <img src="images/banner-02.jpg" class="mySlides" alt="banner-02" />
+            <img src="images/banner-03.jpg" class="mySlides" alt="banner-03" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+      </div>
+    </div>
+
+    <!--script-->
+    <script src="script.js"></script>
+  </body>
+</html>
